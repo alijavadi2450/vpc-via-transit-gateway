@@ -1,7 +1,27 @@
-.terraform/
+# Local Terraform directories
+**/.terraform/*
+
+# Terraform state files
 *.tfstate
 *.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Sensitive variables (e.g., passwords, access keys)
+*.tfvars
+*.tfvars.json
+
+# Ignore environment-specific AWS CLI config
+.aws/
+.terraformrc
+terraform.rc
+
+# Private keys
 *.pem
 *.key
-.terraform.lock.hcl
-.aws/
+
+# OS junk files
+.DS_Store
+Thumbs.db
