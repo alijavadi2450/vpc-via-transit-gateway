@@ -1,27 +1,50 @@
-# Local Terraform directories
+# ----------------------------
+# Terraform local directories
+# ----------------------------
 **/.terraform/*
+.terraform.lock.hcl
 
+# ----------------------------
 # Terraform state files
+# ----------------------------
 *.tfstate
 *.tfstate.*
 
-# Crash logs
-crash.log
-crash.*.log
-
-# Sensitive variables (e.g., passwords, access keys)
+# ----------------------------
+# Terraform variables (sensitive)
+# ----------------------------
 *.tfvars
 *.tfvars.json
 
-# Ignore environment-specific AWS CLI config
+# Always provide an example variables file instead
+# e.g., terraform.tfvars.example (safe placeholder values)
+
+# ----------------------------
+# Crash logs & debug output
+# ----------------------------
+crash.log
+crash.*.log
+
+# ----------------------------
+# AWS CLI config/credentials
+# ----------------------------
 .aws/
 .terraformrc
 terraform.rc
 
-# Private keys
+# ----------------------------
+# SSH keys / certificates
+# ----------------------------
 *.pem
 *.key
+*.crt
+*.pub
 
-# OS junk files
+# ----------------------------
+# Local OS & editor junk
+# ----------------------------
 .DS_Store
 Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
